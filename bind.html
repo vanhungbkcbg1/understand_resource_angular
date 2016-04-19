@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script type="text/javascript" src="js/angular.js"></script>
+    <script type="text/javascript" src="js/controller/binding/bindCtrl.js"></script>
+</head>
+<body ng-app="app" ng-controller="bindCtrl as main">
+
+<ul>
+    <li ng-repeat="item in main.list">
+
+        <input type="text" ng-model="item.name">
+    </li>
+
+</ul>
+<button ng-click="main.getAll()">Get all</button>
+
+<button ng-click="main.changeValue()">Change value</button>
+</body>
+</html>
